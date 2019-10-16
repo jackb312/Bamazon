@@ -17,7 +17,7 @@ var displayProducts = function(){
 	connection.query(query, function(err, res){
 		if(err) throw err;
 		var displayTable = new Table ({
-			head: ["Item ID", "Product Name", "Catergory", "Price", "Quantity"],
+			head: ["Item ID", "Product Name", "Category", "Price", "Quantity"],
 			colWidths: [10,35,25,10,10]
 		});
 		for(var i = 0; i < res.length; i++){
